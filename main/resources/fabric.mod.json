@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "curse_soul",
+	"version": "1.0.0",
+	"name": "Cursed Soul",
+	"description": "This is a hardest mod have ever made",
+	"authors": [
+		"NVP_ERROR"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT.license",
+	"icon": "assets/cursed_soul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.curse_soul.CursedSoul"
+		],
+		"fabric-datagen": [
+			"net.curse_soul.CursedSoulDataGenerator"
+		]
+	},
+	"mixins": [
+		"curse_soul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
